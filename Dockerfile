@@ -1,4 +1,5 @@
 FROM centos
+MAINTAINER Steven Merrill <steven.merrill@gmail.com>
 
 # Install many common packages.
 # rsync and openssh-clients are needed for Vagrant.
