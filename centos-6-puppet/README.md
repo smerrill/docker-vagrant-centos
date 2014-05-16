@@ -3,7 +3,7 @@
 This is a _monolithic_ Docker image (e.g. it runs /sbin/init) that runs sshd.
 Because of this, it is possible to use all Vagrant provisioners with it.
 
-This version has Puppet 3.x preinstalled.
+This version has Puppet 3.4.3 preinstalled.
 
 This is not really the way Docker is meant to be used, but it does result in
 configuration management testing with almost no overhead that can be used on a
@@ -13,7 +13,7 @@ wide variety of cloud platforms.
 
     Vagrant.configure("2") do |config|
       config.vm.provider "docker" do |d, override|
-        d.image = "smerrill/vagrant-centos"
+        d.image = "smerrill/vagrant-centos-puppet"
         d.has_ssh = true
     
         # This is needed if you have non-Docker provisioners in the Vagrantfile.
