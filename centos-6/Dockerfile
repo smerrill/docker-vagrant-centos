@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:centos6
 MAINTAINER Steven Merrill <steven.merrill@gmail.com>
 
 ADD provision.sh /tmp/provision-vagrant-centos.sh
